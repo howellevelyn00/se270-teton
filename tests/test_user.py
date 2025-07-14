@@ -1,5 +1,11 @@
 import requests
 import pytest
+import os
+import requests
+
+BASE_URL = os.getenv("API_URL", "http://127.0.0.1:8000/users")
+VERIFY_SSL = False
+
 
 BASE_URL = "https://127.0.0.1:8000/users"
 VERIFY_SSL = False  # skip SSL verification for localhost dev testing
